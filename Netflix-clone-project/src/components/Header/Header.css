@@ -1,0 +1,68 @@
+/* .header_outer_container{
+    background-color: red;
+     position: sticky;
+     display: flex;
+  
+     
+}
+
+.header_container ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+  
+}
+.header_left li img{
+    /* background-color: red; */
+/* }
+.header_left li{
+      padding:10px 10px;
+      color: white;
+      margin-bottom: 4px;
+} */ 
+ .header_container {
+    background-color: red;
+    position: sticky;
+    display: flex;
+    /* This is the key change to push content to the far left and right */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Add some padding for spacing */
+}
+
+/* This is the container for the left-side content (e.g., icons) */
+.header_left {
+    display: flex;
+    align-items: end;
+}
+
+/* This is the container for the right-side content (e.g., text links) */
+.header_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_left ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+ .header_right ul {
+       list-style: none;
+    display: flex;
+ }
+
+.header_left li, .header_right li {
+    padding: 0 10px;
+    color: white;
+}
+
+.header_left li img {
+    /* Style your icons here, if needed */
+    height: 24px;
+}
+
