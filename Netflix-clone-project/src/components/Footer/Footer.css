@@ -1,0 +1,31 @@
+.footer-wrapper{
+    color:#fff
+}
+.footer-data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-data ul {
+  list-style: none;
+
+}
+li{
+    padding-bottom: 10px;
+}
+.footer-icons ul {
+  list-style: none;
+  display: flex;
+margin-left:120px ;
+  padding: 12px 12px 0;
+
+
+}
+.copy-write,.service-code{
+    margin-left:132px  ;
+}
+.service-code p{
+    width:8%;
+    border: 2px solid;
+    text-align: center;
+}
