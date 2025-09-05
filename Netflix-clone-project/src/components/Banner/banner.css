@@ -1,0 +1,35 @@
+.banner {
+  margin-top: 5vh;
+  height: 70vh;
+  object-fit: contain;
+}
+.banner_contents {
+  margin-left: 30px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.banner_title {
+  margin-top: 6rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+.banner_description {
+  /* padding-top:7rem; */
+  margin-top: 10px;
+  width: 450px;
+  font-size: 1.5rem;
+  color: lavenderblush;
+}
+button {
+  margin: 7px 10px 0;
+  padding: 1rem 1.8rem;
+  border-style: none;
+  border-radius:5%;
+}
+.banner_button_play {
+    padding:15px 40px;
+    text-align: center;
+  background-color: hsl(170, 82%, 31%);
+  box-shadow: 0 8px 16px 0 rgba(28, 108, 131, 0.2);
+}
