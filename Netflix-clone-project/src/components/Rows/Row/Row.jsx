@@ -7,7 +7,7 @@ import axios from "../../../utils/axios";
 const Row = ({ title, fetchUrl, isLargeRow }) => {
   const [movies, setMovie] = useState([]);
   const base_url = "http://image.tmdb.org/t/p/w500";
-
+console.log(fetchUrl);
   useEffect(() => {
     (async () => {
       try {
