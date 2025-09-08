@@ -7,7 +7,7 @@ const RowList = () => {
       <Row title="TopRated" fetchUrl={requests.fetchTopRated}  isLargeRow={true}/>
       <Row title="Action" fetchUrl={requests.fetchAction} isLargeRow={true} />
       <Row title="Comedy" fetchUrl={requests.fetchComedy}  isLargeRow={true}/>
-      <Row title="Romance" fetchUrl={requests.fetchRomance}  isLargeRow={true}/>
+      {/* <Row title="Romance" fetchUrl={requests.fetchRomance}  isLargeRow={true}/> */}
       <Row title="Horror" fetchUrl={requests.fetchHorror} isLargeRow={true} />
       <Row title="Documentary" fetchUrl={requests.fetchDocumentary} isLargeRow={true} />
       <Row title="TVShow" fetchUrl={requests.fetchTVShow}  isLargeRow={true}/>
