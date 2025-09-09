@@ -37,12 +37,13 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       );
     }
   };
+
 const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 10, // Number of cards visible
-    slidesToScroll: 1,
+    slidesToScroll: 10,
   
     responsive: [
       {
@@ -59,6 +60,7 @@ const settings = {
     },
   };
   return (
+    <>
     <div className="row">
       <h1>{title}</h1>
       <Slider {...settings} className="row_posters slider-container">
@@ -80,6 +82,7 @@ const settings = {
         {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
       </div>
     </div>
+    </>
   );
 };
 export default Row;

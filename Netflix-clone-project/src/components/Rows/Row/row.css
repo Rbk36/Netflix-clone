@@ -1,6 +1,7 @@
 h1 {
   color: white;
 }
+
 .row_poster {
   width: 100%;
   object-fit: contain;
@@ -20,9 +21,14 @@ h1 {
 .row_poster:hover {
   transform: scale(1.06);
 }
-.row_posterLarge{
+.row_posterLarge {
   max-height: 250px;
 }
 
+.slick-prev,
+.slick-next {
+  position: absolute;
+  z-index: 1;
+  padding: 20px 35px !important;
 
-
+}

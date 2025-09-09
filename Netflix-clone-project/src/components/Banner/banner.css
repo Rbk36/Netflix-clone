@@ -17,7 +17,7 @@
   color: white;
 }
 .banner_description {
-  /* padding-top:7rem; */
+  padding-top:0.6rem;
   margin-top: 10px;
   width: 450px;
   font-size: 1.2rem;
@@ -25,23 +25,75 @@
   color: lavenderblush;
 }
 button {
-  margin: 7px 10px 0;
-  padding: 1rem 1.8rem;
   border-style: none;
   border-radius: 5%;
   font-size: 0.9rem;
   font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
 }
+
+
 .banner_button {
   background-color: rgba(185, 180, 180, 0.733);
+  padding: 10px 40px;
+  color: #fff;
+
 }
 .banner_button_play {
   border: none;
-  padding: 15px 40px;
+  padding: 10px 50px;
   text-align: center;
   box-shadow: 0 8px 16px 0 rgba(28, 108, 131, 0.2);
-
 }
-.banner_button_play:before{
-    content: "\f04b";
+svg {
+  color: black;
+  font-size: 2.4rem !important;
+}
+
+.banner_button svg{
+    color: #fff
+}
+.center{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 15px;
+ 
+}
+.banner_buttons{
+  display: flex;
+  justify-content:start;
+     gap: 10px;
+}
+p{
+  padding-top: 15px;
+}
+.banner_buttons_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  
+}
+
+/* .info_button_container {
+  position: relative;
+  display: inline-block;
+} */
+
+.info_card {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  background-color: #141414;
+  color: white;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 10;
 }
