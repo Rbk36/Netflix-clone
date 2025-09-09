@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import requests from "../../utils/requests";
-import axios from "../../utils/axios";
-import PlayCircleFilledWhiteIcon from "@mui/icons-material/PlayCircleFilledWhite";
+import axios from "../../utils/axios.js";
+import PlayArrowSharpIcon from "@mui/icons-material/PlayArrowSharp";
+import InfoOutlineIcon from "@mui/icons-material/InfoOutline";
 import "./banner.css";
 const Banner = () => {
-  const [movie, setMovie] = useState({});
+  const [movie, setMovie] = useState(null);
 
   useEffect(() => {
     (async () => {
       try {
-        const request = await axios.get(requests.fetchNetflixOrignals);
+        const request = await axios.get(requests.fetchTopRated);
         console.log(request);
         setMovie(
           request.data.results[
@@ -22,7 +23,6 @@ const Banner = () => {
     })();
   }, []);
 
-
   return (
     <div
       className="banner"
@@ -31,7 +31,6 @@ const Banner = () => {
         backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        // height:300
       }}
     >
       <div className="banner_contents">
@@ -39,16 +38,15 @@ const Banner = () => {
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="banner_buttons">
-          <button className="banner_button_play">Play
-            
-            {/* <PlayCircleFilledWhiteIcon /> */}
+          <button className="banner_button_play">
+            <PlayArrowSharpIcon className="play" /> Play
           </button>
-          <button className="banner_button">My List</button>
+          <button className="banner_button"><InfoOutlineIcon/> My List</button>
         </div>
-        {/* <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1> */}
+
         <h1 className="banner_description">
-          {movie?.overview?.length > 150
-            ? `${movie.overview.slice(0, 150)}...`
+          {movie?.overview.length > 150
+            ? `${movie?.overview.slice(0, 150)}...`
             : movie?.overview}
         </h1>
       </div>

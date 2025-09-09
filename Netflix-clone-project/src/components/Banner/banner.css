@@ -34,14 +34,21 @@ button {
 }
 .banner_button {
   background-color: rgba(185, 180, 180, 0.733);
+  font-size: 1.2rem;
+  width: 200px;
+  padding: 25px 25px;
 }
+
 .banner_button_play {
   border: none;
-  padding: 15px 40px;
-  text-align: center;
+  padding: 25px 40px;
+  font-size: 1.5rem;
+  width: 200px;
   box-shadow: 0 8px 16px 0 rgba(28, 108, 131, 0.2);
-
 }
-.banner_button_play:before{
-    content: "\f04b";
+
+svg {
+  font-size: 2.5rem !important;
+  color: black;
+  margin-left: 2%;
 }
