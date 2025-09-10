@@ -25,10 +25,4 @@ h1 {
   max-height: 250px;
 }
 
-.slick-prev,
-.slick-next {
-  position: absolute;
-  z-index: 1;
-  padding: 20px 35px !important;
 
-}

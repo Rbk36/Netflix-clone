@@ -1,5 +1,5 @@
 .banner {
-  margin-top: 5vh;
+  margin-top: 2vh;
   height: 90vh;
   object-fit: contain;
 }
@@ -17,7 +17,7 @@
   color: white;
 }
 .banner_description {
-  padding-top:0.6rem;
+  padding-top: 0.6rem;
   margin-top: 10px;
   width: 450px;
   font-size: 1.2rem;
@@ -26,16 +26,18 @@
 }
 button {
   border-style: none;
-  border-radius: 5%;
-  font-size: 0.9rem;
+  border-radius: 5% !important;
+  font-size: 1.2rem !important;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s;
 }
 
-
 .banner_button {
   background-color: rgba(185, 180, 180, 0.733);
+  margin: 10px;
+  padding: 15px;
+  color: white;
 }
 
 .banner_button_play {
@@ -43,8 +45,51 @@ button {
   padding: 15px 40px;
   text-align: center;
   box-shadow: 0 8px 16px 0 rgba(28, 108, 131, 0.2);
-
 }
-.banner_button_play:before{
-    content: "\f04b";
+
+.banner_buttons_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.banner_buttons {
+  display: flex;
+  gap: 16px; /* Adds space between buttons */
+  align-items: center;
+}
+
+.info_button_container {
+  position: relative;
+  display: inline-block;
+}
+
+.info_card {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  background-color: #141414;
+  color: white;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.trailer_embed {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 640px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+svg {
+  font-size: 2rem !important;
+}
+.banner_button_play svg {
+  color: black;
 }

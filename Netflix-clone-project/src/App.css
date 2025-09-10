@@ -1,9 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
- 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #000;
-
+body {
+  background-color: black !important;
+  color: white !important;
+}
+.slick-prev,
+.slick-next {
+  position: absolute;
+  z-index: 1;
+  padding: 20px 45px !important;
 }
